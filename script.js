@@ -5,7 +5,7 @@
 var degree_celsius = 26;
 var degree_fahrenheit = (9 / 5) * degree_celsius + 32;
 
-alert(degree_celsius + " градусов по Цельсию = " + degree_fahrenheit.toFixed(1) + " градусов по Фаренгейту");
+alert("К уроку 1: " + degree_celsius + " градусов по Цельсию = " + degree_fahrenheit.toFixed(1) + " градусов по Фаренгейту");
 
 /*
 2. Работа с переменными.
