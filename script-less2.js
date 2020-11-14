@@ -102,7 +102,8 @@ function mathOperation(arg1, arg2, operation) {
     }
 }
 
-let operation = prompt("К заданию 6 урока 2. Введите команду (add, sub, mult или div): ");
+// let operation = prompt("К заданию 6 урока 2. Введите команду (add, sub, mult или div): ");
+let operation = "add"
 var res = mathOperation(a, b, operation);
 
 switch (operation) {
