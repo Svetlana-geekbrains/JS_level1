@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS level 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ручкина Светлана</h1>
+    <!-- <script src="script.js"></script>
+
+    <h2>Задания к уроку 2</h2>
+    <script src="script-less2.js"></script>
+
+    <h2>Задания к уроку 3</h2>
+    <script src="script-less3.js"></script>
+
+    <h2>Задания к уроку 4</h2>
+    <script src="script-less4.js"></script>
+
+    <section id="main_section">
+        <h2>Задания к уроку 5</h2>
+        <p>1. Создать функцию, генерирующую шахматную доску. При этом можно использовать любые html-теги по своему
+            желанию.
+            Доска должна быть разлинована соответствующим образом, т.е. чередовать черные и белые ячейки. Строки должны
+            нумероваться числами от 1 до 8, столбцы – латинскими буквами A, B, C, D, E, F, G, H.</p>
+
+        <p>2. Заполнить созданную таблицу буквами, отвечающими за шахматную фигуру, например К – король, Ф – ферзь и
+            т.п.,
+            причем все фигуры должны стоять на своих местах и быть соответственно черными и белыми.</p>
+
+        <p>3. *Заменить буквы, обозначающие фигуры картинками.</p>
+        <script src="script-less5.js"></script>
+    </section> -->
+
+    <main>
+        <h2>Задания к уроку 6</h2>
+        <p>1. Доработать функцию замены картинки в галерее таким образом, чтобы она проверяла наличие картинки по
+            указанному в src адресу.</p>
+        <p>2. Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить»,
+            при нажатии на которую происходит добавление имени и цены товара в блок корзины. Корзина должна уметь
+            считать общую сумму заказа.</p>
+        <p>3. *Добавить в галерею функцию перехода к следующему изображению. По сторонам от большой картинки должны быть
+            стрелки «вперед» и «назад», по нажатию на которые происходит замена изображения на следующее или предыдущее.
+        </p>
+
+        <hr>
+
+        <p>В первом задании не смогла придумать ничего лучше, чем написать действие по событию <b>onerror</b> в тегах
+            img (и специально поломала src в первой картинке для проверки)</p>
+        <div class="preview">
+            <img onclick="hand" class="preview-item" onerror="this.style.display = 'none'"
+                src="https://images.unsplash.com/photo-160529683-7c02e14957ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                alt="PS5">
+            <img onclick="hand" class="preview-item" onerror="this.style.display = 'none'"
+                src="https://images.unsplash.com/photo-1605291952089-adcb85d4dcbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                alt="road">
+            <img onclick="hand" class="preview-item" onerror="this.style.display = 'none'"
+                src="https://images.unsplash.com/photo-1605325811474-ba58cf3180d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                alt="palm">
+        </div>
+        <div class="full-picture"></div>
+
+        <hr>
+
+        <section class="shop">
+            <div class="catalog">
+                <div class="product">
+                    <img class="product-img" src="img/phone.jpg" alt="phone">
+                    <p class="product-text">Телефон</p>
+                    <p class="product-price">18900</p>
+                    <button>Купить</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="img/charger.jpg" alt="charger">
+                    <p class="product-text">Зарядка</p>
+                    <p class="product-price">1300</p>
+                    <button>Купить</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="img/headphones.jpg" alt="headphones">
+                    <p class="product-text">Наушники</p>
+                    <p class="product-price">4700</p>
+                    <button>Купить</button>
+                </div>
+                <div class="product">
+                    <img class="product-img" src="img/case.jpg" alt="case">
+                    <p class="product-text">Чехол</p>
+                    <p class="product-price">890</p>
+                    <button>Купить</button>
+                </div>
+            </div>
+            <div class="basket">
+                <div class="basket-header">
+                    <p class="basket-header-text">Корзина</p>
+                </div>
+                <div class="basket-inside">Пока ваша корзина пуста...</div>
+                <div class="sum disp-none">Общая сумма сотставила: </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script-less6.js"></script>
+    <script src="script-less6-basket.js"></script>
+
+</body>
+
+</html>
