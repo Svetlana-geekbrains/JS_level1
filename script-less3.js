@@ -26,8 +26,7 @@ let Basket = [
     { name: 'Телефон', price: 18990 },
     { name: 'Зарядка', price: 1300 },
     { name: 'Наушники', price: 4700 },
-    { name: 'Чехол', price: 890 },
-    { name: 'Держатель для машины', price: 1500 }
+    { name: 'Чехол', price: 890 }
 ];
 
 function countBasketPrice(arr) {
