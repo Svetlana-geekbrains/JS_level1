@@ -36,6 +36,7 @@ window.onload = () => {
     // выбрать все .preview-item
     // добавить им обработчик кликов
     // взять src атрибут и создать элемент img.full-picture-item внутри .full-picture
+    console.log("hw");
     const previews = document.querySelectorAll('img.preview-item');
     for (const item of previews) {
         item.addEventListener('click', handleClick);
